@@ -5,21 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Circle Home Page</title>
+  <link rel="stylesheet" href="home.css">
+  <title>Circle Agency</title>
 </head>
 
 <body>
 
   <!--Here I am setting the navigation bar-->
   <header>
-    <nav>
+    <nav id="nav-bar">
       <ul>
         <li><a href="home.html"><img
               src="https://raw.githubusercontent.com/dzc1/amazon-class01-apr23/eb3971df7512e38773a684940962c0305829df6f/boiler-plates/midterm-boiler-plates/midterm-project-boiler-advanced/resources/images/logos/circle.svg"
               alt="Circle logo"></a></li>
         <li><a href="home.html">Home</a></li>
+        <li><a href="projectPage.html">Project Page - Simple</a></li>
         <li><a href="#Projects">Projects</a></li>
-        <li><a href="contact.html">Contact us</a></li>
+        <button class="buttons">
+          <li><a href="contact.html">Contact us</a></li>
+        </button>
       </ul>
     </nav>
 
@@ -27,14 +31,24 @@
 
   <!--First section of the page-->
   <section>
-    <h1>Empower Your Business With Stunning Design!</h1>
-    <h5>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.
-    </h5>
-    <img
-      src="https://github.com/dzc1/amazon-class01-apr23/blob/main/boiler-plates/midterm-boiler-plates/midterm-project-boiler-advanced/resources/images/hero-section/hero-image.png?raw=true"
-      alt="A hero from Circle, showing a happy face">
-    <h5>See our work</h5>
-    <button><a href="contact.html"></a>Get in touch</button>
+    <div>
+      <h1 id="first-sentence">Empower Your <br> Business With <br> Stunning Design!</h1>
+      <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.
+      </p>
+      <p>See our work</p>
+      <button class="buttons"><a href="contact.html">Get in touch</a></button>
+    </div>
+    <div>
+      <img class="hero-img"
+        src="https://github.com/dzc1/amazon-class01-apr23/blob/main/boiler-plates/midterm-boiler-plates/midterm-project-boiler-advanced/resources/images/hero-section/hero-image.png?raw=true"
+        alt="A hero from Circle, showing a happy face">
+      <img class="card-img"
+        src="https://github.com/dzc1/amazon-class01-apr23/blob/main/boiler-plates/midterm-boiler-plates/midterm-project-boiler-advanced/resources/images/hero-section/card-1.png?raw=true"
+        alt="Card">
+      <img class="thumb-img"
+        src="https://github.com/dzc1/amazon-class01-apr23/blob/main/boiler-plates/midterm-boiler-plates/midterm-project-boiler-advanced/resources/images/hero-section/card-2.png?raw=true"
+        alt="Thumb up">
+    </div>
   </section>
 
   <!--Second section with the brand parade-->
@@ -49,19 +63,19 @@
       <h4>sunt aut facere repellat provident occaecati excepturi optio reprehenderit</h4>
       <p>quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam
         mostrum rerum est autem sunt rem eveniet architecto</p>
-      <button><a href="projectPage.html"></a>Learn More</button>
+      <a href="projectPage.html">Learn More</a>
     </div>
     <div>
       <h4>qui est esse</h4>
       <p>est rerum tempore vitae sequi sint nihil reprehenderit dolor beatae ea dolores neque fugiat blanditiis
         voluptate porro vel nihil molestiae ut reiciendis qui aperiam non debitis possimus qui neque nisi nulla</p>
-      <button><a href="projectPage.html"></a>Learn More</button>
+      <a href="projectPage.html">Learn More</a>
     </div>
     <div>
       <h4>ae molestias quasi exercitationem repellat qui ipsa sit aut</h4>
       <p>et iusto sed quo iure voluptatem occaecati omnis eligendi aut ad voluptatem doloribus vel accusantium quis
         pariatur molestiae porro eius odio et labore et velit aut</p>
-      <button><a href="projectPage.html"></a>Learn More</button>
+      <a href="projectPage.html">Learn More</a>
     </div>
   </article>
 
@@ -82,7 +96,7 @@
         alt="Fountain pen icon">
       <h4>User Interface Design</h4>
       <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
-      <button><a href="home.html"></a>Learn More</button>
+      <a href="home.html">Learn More</a>
     </div>
     <div>
       <img
@@ -90,7 +104,7 @@
         alt="Mouse click icon">
       <h4>User Experience Design</h4>
       <p>Circle always focuses on delivering the best user experience to your customers.</p>
-      <button><a href="home.html"></a>Learn More</button>
+      <a href="home.html">Learn More</a>
     </div>
     <div>
       <img
@@ -98,7 +112,7 @@
         alt="html icon">
       <h4>Application Development</h4>
       <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
-      <button><a href="home.html"></a>Learn More</button>
+      <a href="home.html">Learn More</a>
     </div>
   </section>
 
@@ -112,11 +126,24 @@
         alt="letter icon">
       <label for="email" placeholder="Enter your email"></label>
       <input type="email" name="email" id="email" required>
-      <input type="submit" value="Subscribe">
+      <input class="buttons" type="submit" value="Subscribe">
     </form>
   </section>
-  <footer>
 
+  <!--Setting the footer of the document-->
+  <footer>
+    <img
+      src="https://raw.githubusercontent.com/dzc1/amazon-class01-apr23/eb3971df7512e38773a684940962c0305829df6f/boiler-plates/midterm-boiler-plates/midterm-project-boiler-advanced/resources/images/logos/circle.svg"
+      alt="Circle logo">
+    <address>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</address>
+    <ul>
+      <li><a href="#"></a>Team</li>
+      <li><a href="#"></a>Services</li>
+      <li><a href="#"></a>About Us</li>
+      <li><a href="#"></a>Press</li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#"></a>Privacy Policy</li>
+    </ul>
   </footer>
 </body>
 
