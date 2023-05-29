@@ -97,15 +97,21 @@ li a:hover {
     height: auto;
 }
 
-.projects {
-    width: 1250px;
-    margin: 70px;
-    display: flex;
-    flex-direction: column;
-    box-sizing: content-box;
-    justify-content: space-between;
-    background-color: white;
+#project {
+    text-align: center;
 }
+
+#project div {
+    width: 30%;
+    margin: 0.5px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    /* flex-direction: column;
+    box-sizing: content-box;
+    justify-content: space-between; */
+}
+
 
 .projects img {
     width: 20%;
