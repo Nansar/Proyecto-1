@@ -134,3 +134,36 @@ li a:hover {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
+
+
+/* footer section */
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    margin: 100px 200px 100px 200px;
+}
+
+#address {
+    padding-bottom: 10px;
+    font-size: 10px;
+}
+
+#footer-menu {
+    display: grid;
+    grid-template-columns: 100px 100px 80px;
+    gap: 30px;
+}
+
+#footer-menu a {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#footer-menu a:hover {
+    font-size: 17px;
+    text-decoration: none;
+    color: #5C6594
+}

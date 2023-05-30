@@ -29,16 +29,17 @@
 
 
     <section>
+        <h1>Contact Us</h1>
         <form action="#" class="contact-form">
-            <h1>Contact Us</h1>
             <div>
                 <label for="name">Full Name *</label> <br>
                 <input id="name" type="text" required placeholder="Enter your full name">
             </div>
-            <div>
+            <div id="inline-form1">
                 <label for="email">Email</label> <br>
                 <input type="email" name="email" id="email" placeholder="Enter your email">
-
+            </div>
+            <div id="inline-form2">
                 <label for="phone-number">Phone</label>
                 <input type="number" name="number" id="phone-number" placeholder="Enter your phone number">
             </div>
@@ -55,17 +56,25 @@
 
 
     <footer>
-        <img src="https://raw.githubusercontent.com/dzc1/amazon-class01-apr23/eb3971df7512e38773a684940962c0305829df6f/boiler-plates/midterm-boiler-plates/midterm-project-boiler-advanced/resources/images/logos/circle.svg"
-            alt="Circle logo">
-        <address>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</address>
-        <ul>
-            <li><a href="#"></a>Team</li>
-            <li><a href="#"></a>Services</li>
-            <li><a href="#"></a>About Us</li>
-            <li><a href="#"></a>Press</li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#"></a>Privacy Policy</li>
-        </ul>
+        <div id="address">
+            <img src="https://raw.githubusercontent.com/dzc1/amazon-class01-apr23/eb3971df7512e38773a684940962c0305829df6f/boiler-plates/midterm-boiler-plates/midterm-project-boiler-advanced/resources/images/logos/circle.svg"
+                alt="Circle logo">
+            <address>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</address>
+        </div>
+        <div>
+            <table id="footer-menu">
+                <tr>
+                    <td><a href="#">Team</a></td>
+                    <td><a href="#">Services</a></td>
+                    <td><a href="#">About Us</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Press</a></td>
+                    <td><a href="#Projects">Projects</a></td>
+                    <td><a href="#">Privacy Policy</a></td>
+                </tr>
+            </table>
+        </div>
     </footer>
 
 </body>
