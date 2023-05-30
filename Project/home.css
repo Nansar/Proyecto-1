@@ -76,7 +76,7 @@ li a:hover {
 .thumb-img {
     height: 250px;
     position: absolute;
-    bottom: -80px;
+    bottom: -30px;
     left: 300px;
 }
 
@@ -103,22 +103,34 @@ li a:hover {
 
 #project div {
     width: 30%;
-    margin: 0.5px;
+    margin: 1px;
+    height: auto;
     display: inline-block;
     vertical-align: top;
     background-color: white;
+    box-sizing: border-box;
     /* flex-direction: column;
-    box-sizing: content-box;
     justify-content: space-between; */
 }
 
 
 .projects img {
-    width: 20%;
+    width: 100%;
+}
+
+.projects p {
+    text-align: left;
 }
 
 .project-description {
-    font-weight: 1000;
+    font-weight: bold;
     color: black;
     font-size: 1em;
+}
+
+#feedback {
+    background-image: url("https://github.com/dzc1/amazon-class01-apr23/blob/main/boiler-plates/midterm-boiler-plates/midterm-project-boiler/resources/images/testimonial-section/orbit.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
