@@ -13,6 +13,29 @@ body {
     font-size: 20px;
 }
 
+/* Scroll to top button, not working*/
+
+#scrollTopTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#scrollTopTopButton:hover {
+    background-color: #555;
+}
+
+/* Navigation bar */
+
 li a:hover {
     color: blue;
 }
@@ -36,6 +59,9 @@ li a:hover {
     background-color: rgb(7, 7, 114);
     padding: 14px;
 }
+
+
+/* first section of the page */
 
 #discover-section {
     width: 1250px;
@@ -80,6 +106,9 @@ li a:hover {
     left: 300px;
 }
 
+
+/* brands parade */
+
 #brands-row {
     margin: 70px;
     display: flex;
@@ -97,20 +126,26 @@ li a:hover {
     height: auto;
 }
 
+/* Projects section */
+
 #project {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-#project div {
-    width: 30%;
-    margin: 1px;
+#project .projects {
+    width: 400px;
+    margin: 10px;
     height: auto;
-    display: inline-block;
-    vertical-align: top;
     background-color: white;
     box-sizing: border-box;
-    /* flex-direction: column;
-    justify-content: space-between; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 
@@ -134,8 +169,6 @@ li a:hover {
     background-position: center;
     background-repeat: no-repeat;
 }
-
-
 
 
 /* footer section */
