@@ -113,6 +113,7 @@ li a:hover {
     margin: 70px;
     display: flex;
     flex-wrap: wrap;
+    overflow: auto;
 }
 
 .img-col {
@@ -163,11 +164,196 @@ li a:hover {
     font-size: 1em;
 }
 
+/*feedback section */
+
 #feedback {
     background-image: url("https://github.com/dzc1/amazon-class01-apr23/blob/main/boiler-plates/midterm-boiler-plates/midterm-project-boiler/resources/images/testimonial-section/orbit.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#feedback>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+}
+
+#feedback>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#feedback h1 {
+    font-weight: bold;
+    color: grey;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#feedback>div>p:first-of-type {
+    text-align: center;
+    color: yellow;
+}
+
+
+#feedback>div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#feedback img[alt="memoji_1"] {
+    position: absolute;
+    height: 120px;
+    top: 10%;
+    left: -40%;
+}
+
+#feedback img[alt="memoji_2"] {
+    position: absolute;
+    height: 120px;
+    top: 10%;
+    right: -40%;
+}
+
+#feedback img[alt="memoji_3"] {
+    position: absolute;
+    height: 120px;
+    bottom: 10%;
+    left: -40%;
+}
+
+#feedback img[alt="memoji_4"] {
+    position: absolute;
+    height: 120px;
+    bottom: 10%;
+    right: -40%;
+}
+
+#feedback img[alt="profile_picture"] {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#feedback h6 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#feedback>div>p:last-of-type {
+    font-size: 28px;
+    /* this changes the size of my p:first-of-type ???*/
+}
+
+
+/* services section */
+
+#services {
+    display: flex;
+    justify-content: space-between;
+}
+
+#services>div {
+    width: 30%;
+    margin: 75px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+/*
+#services>div:last-child {
+    margin-right: ;
+}   */
+
+
+#services>div img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(195, 195, 241);
+}
+
+#services>div h4 {
+    font-weight: bold;
+}
+
+
+#services>div p {
+    margin-bottom: 10px;
+}
+
+#services>div a {
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+}
+
+
+/* Newsletter section */
+
+#newsletter {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+}
+
+#newsletter h1,
+#newsletter p,
+#newsletter form {
+    margin-bottom: 20px;
+}
+
+#newsletter img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#newsletter label {
+    display: none;
+}
+
+#newsletter input[type="email"] {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#newsletter input[type="submit"] {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 
