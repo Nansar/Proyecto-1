@@ -20,10 +20,10 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 9999;
+    z-index: 9000;
     font-size: 18px;
-    width: 60px;
-    height: 60px;
+    width: 500px;
+    height: 80px;
     background-color: black;
     color: white;
     border: none;
@@ -333,18 +333,14 @@ li a:hover {
 
 #newsletter img {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-bottom: 20px;
-}
-
-#newsletter label {
-    display: none;
 }
 
 #newsletter input[type="email"] {
     width: 250px;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 20px;
 }
 
@@ -356,33 +352,44 @@ li a:hover {
     cursor: pointer;
 }
 
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.input-container img {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
 
 /* footer section */
 footer {
     display: flex;
     justify-content: center;
-    gap: 400px;
-    margin: 100px 200px 100px 200px;
+    gap: 600px;
+    margin: 70px;
 }
 
 #address {
     padding-bottom: 10px;
-    font-size: 10px;
+    font-size: 13px;
 }
 
 #footer-menu {
     display: grid;
-    grid-template-columns: 100px 100px 80px;
-    gap: 30px;
+    grid-template-columns: 200px;
+    gap: 100px;
 }
 
 #footer-menu a {
-    font-size: 15px;
+    font-size: 16px;
     text-decoration: none;
 }
 
 #footer-menu a:hover {
-    font-size: 17px;
-    text-decoration: none;
+    font-size: 1em;
     color: #5C6594
 }

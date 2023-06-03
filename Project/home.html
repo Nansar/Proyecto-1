@@ -28,9 +28,7 @@
 
   </header>
 
-  <!--Scroll to Top Button  ,  not working-->
 
-  <button onclick="scrollToTop()" id="scrollToTopButton" title="Scroll to Top">Scroll to Top</button>
 
   <!--First section of the page-->
 
@@ -54,6 +52,10 @@
         alt="thumb_up">
     </div>
   </section>
+
+  <!--Scroll to Top Button  ,  not working-->
+
+  <button onclick="scrollToTop()" id="scrollToTopButton" title="Scroll to Top">Scroll to Top</button>
 
   <!--Second section with the brand parade-->
 
@@ -202,11 +204,12 @@
     <h1>Do you have any questions?</h1>
     <p>Let us help you!</p>
     <form action="" method="get">
-      <img
-        src="https://raw.githubusercontent.com/dzc1/amazon-class01-apr23/eb3971df7512e38773a684940962c0305829df6f/boiler-plates/midterm-boiler-plates/midterm-project-boiler-advanced/resources/images/newsletter/icon/mail.svg"
-        alt="letter_icon">
-      <label for="email"></label>
-      <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      <div class="input-container">
+        <img
+          src="https://raw.githubusercontent.com/dzc1/amazon-class01-apr23/eb3971df7512e38773a684940962c0305829df6f/boiler-plates/midterm-boiler-plates/midterm-project-boiler-advanced/resources/images/newsletter/icon/mail.svg"
+          alt="letter_icon">
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      </div>
       <input class="buttons" type="submit" value="Subscribe">
     </form>
   </section>
@@ -234,6 +237,7 @@
       </table>
     </div>
   </footer>
+
   <script src="home.js"></script>
 </body>
 
